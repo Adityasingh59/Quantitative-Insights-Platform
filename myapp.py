@@ -13,7 +13,11 @@ st.markdown(
             background: #F0F2F5;  /* Light background */
         }
         .sidebar .sidebar-content {
-            background-color: #FFFFFF;  /* Sidebar background */
+            background-color: transparent;  /* Make sidebar background transparent */
+            color: #1E90FF;  /* Text color for sidebar */
+        }
+        .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar .stButton, .sidebar .stSelectbox {
+            color: #1E90FF;  /* Set sidebar text color */
         }
         h1, h2, h3, h4 {
             color: #1E90FF;  /* Title color */
@@ -31,11 +35,12 @@ st.markdown(
             background-color: #0056b3;  /* Button hover color */
         }
         .stSelectbox, .stMultiselect, .stSlider, .stTextInput, .stNumberInput {
-            background-color: #F9F9F9;  /* Input fields background */
+            background-color: transparent;  /* Input fields background */
             border: 1px solid #E0E0E0;  /* Input fields border */
             margin: 5px 0;  /* Reduced margin for input fields */
             padding: 8px;  /* Padding for input fields */
             border-radius: 4px;  /* Rounded input field corners */
+            color: #1E90FF;  /* Text color for input fields */
         }
         .stSelectbox:focus, .stMultiselect:focus, .stSlider:focus, .stTextInput:focus, .stNumberInput:focus {
             border-color: #1E90FF;  /* Focus border color */
@@ -46,10 +51,16 @@ st.markdown(
         .stTabs {
             margin: 5px 0;  /* Reduced margin for tabs */
         }
+        /* Remove background from all visualization panels */
+        .streamlit-expander, .streamlit-card {
+            background-color: transparent;  /* Remove background color */
+            border: none;  /* Remove border */
+        }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # Title of the page
 st.title(':rainbow[Data Analytics Portal]')

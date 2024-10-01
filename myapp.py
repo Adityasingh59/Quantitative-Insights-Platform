@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(page_title='Analytics Dashboard', page_icon='📈')
+st.set_page_config(page_title='Quantitative Insights Platform', page_icon='📈')
 
 # Add custom CSS to enhance styling
 st.markdown(
